@@ -11,7 +11,7 @@ can run a local WebSocket server to expose OPOS devices to a web application! no
 
 ## 📦 What It Is
 
-This library provides an **easy-to-integrate POS (Point of Sale)** solution for .NET, specifically designed to interact with **OPOS devices** (like receipt printers, barcode scanners, etc.) through the **POSfor.NET** library. 
+This library provides an **easy-to-integrate POS (Point of Sale)** solution for .NET, specifically designed to interact with **OPOS devices** (like Cash Drawers, Magnetic Swipe Readers (MSR), etc.) through the **POSfor.NET** library. 
 
 It introduces a unique feature to **expose POS peripherals to a web application** via a **WebSocket server**, something that's traditionally difficult or impossible with web technologies. 
 
