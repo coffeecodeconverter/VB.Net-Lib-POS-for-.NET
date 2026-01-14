@@ -1,28 +1,34 @@
 # VB.NET-Lib - POS for .NET  
-Point of Sale (POS) Library for .NET with Easy Integration for Retail and Transaction Systems
+Point of Sale (POS) Library for .NET with Easy Integration for Retail and Transaction Systems.
+Seamless interaction with OPOS devices using POS for .NET library. 
+can run silently in the background like a service. 
+
+BONUS FEATURE
+can run a local WebSocket server to expose OPOS devices to a web application! no longer are you locked in to out-dated UI libraries! 
+
 
 ---
 
 ## 📦 What It Is
 
-This is a **flexible and easy-to-integrate Point of Sale (POS) library** for .NET, designed for retail and transaction systems. It provides essential functionality to manage sales, products, and transactions in a customizable way, including:
+This library provides an **easy-to-integrate POS (Point of Sale)** solution for .NET, specifically designed to interact with **OPOS devices** (like receipt printers, barcode scanners, etc.) through the **POSfor.NET** library. 
 
-- Sales transactions (sale, refund, partial payment)
-- Inventory management
-- Receipt generation
-- Payment gateway integration
+It introduces a unique feature to **expose POS peripherals to a web application** via a **WebSocket server**, something that's traditionally difficult or impossible with web technologies. 
+
+Additionally, it runs silently in the background as a service, listening for device calls, while offering real-time bidirectional communication with web apps for device statuses and transactions.
 
 ---
 
 ## 🚀 Features
 
-✅ **Transaction management** (sale, refund, partial payments)  
-✅ **Inventory tracking** with product quantities and pricing  
-✅ **Receipt generation** in customizable formats  
-✅ **Payment gateway integration** for credit/debit card processing  
-✅ **Easy integration** into any .NET-based application  
-✅ Built-in **error handling** for seamless operations  
-✅ Supports both **cash** and **digital payment** methods  
+✅ **OPOS Device Integration** via **POSfor.NET** library (receipt printers, scanners, etc.)  
+✅ **WebSocket Server** for real-time, bidirectional communication with web apps (no need for outdated UI)  
+✅ Exposes device actions (e.g., printing, scanning) to a **modern web interface**  
+✅ **MiniWebApp** included for testing OPOS devices over WebSocket in real-time  
+✅ Fully **configurable settings** for device access and communication  
+✅ Runs **silently as a background service** listening for device calls  
+✅ **Real-time updates** for device status and activity via WebSocket  
+✅ Easy to integrate into **any VB.NET project**, providing a simple interface to control complex hardware operations  
 
 ---
 
@@ -30,26 +36,30 @@ This is a **flexible and easy-to-integrate Point of Sale (POS) library** for .NE
 
 ### `POSController.vb` (Class)
 - Handles all core POS functions (sales, refunds, partial payments)  
-- Manages product data, pricing, and discounts  
-- Supports receipt printing and export  
+- Manages interactions with OPOS devices via POSfor.NET library  
+- Supports **real-time WebSocket communication** for device access  
 
-### `POSProduct.vb` (Class)
-- Manages product data including SKU, name, description, and price  
-- Tracks stock levels and updates inventory  
-- Supports barcode generation and scanning  
+### `OPOSDeviceManager.vb` (Class)
+- Encapsulates the POSfor.NET library for interacting with OPOS peripherals (e.g., printers, scanners)  
+- Manages peripheral operations and device statuses
 
-### `PaymentGateway.vb` (Class)
-- Integration with popular payment gateways (e.g., Stripe, PayPal)  
-- Handles card transactions and payment confirmations  
+### `WebSocketServer.vb` (Class)
+- Exposes OPOS device operations via **WebSocket**, enabling real-time communication with web applications  
+- Supports bidirectional data flow for device statuses, actions, and updates  
+
+### `MiniWebApp.vb` (Web Interface)
+- A **built-in web app** to test and interact with OPOS devices over WebSocket  
+- Includes simple device control UI for scanning, printing, etc.  
 
 ---
 
 ## 🧩 Use Cases
 
-- Retail point-of-sale systems  
-- Small business transaction management  
-- Inventory tracking and management  
-- Customizable POS for kiosks, mobile apps, or in-store applications  
+- **Retail POS systems** with web-based frontends  
+- **Web-based inventory management** integrated with OPOS devices  
+- **Web apps** that need to interact with hardware peripherals in real time  
+- **Portable class** for seamless integration into **any VB.NET project** needing OPOS device support  
+- Ideal for businesses seeking **modern UIs** while retaining legacy hardware support  
 
 ---
 
@@ -58,14 +68,6 @@ This is a **flexible and easy-to-integrate Point of Sale (POS) library** for .NE
 - **.NET Framework 4.5.1 or higher**  
 - **VB.Net-based application**  
 - Visual Studio 2015 or later recommended  
+- POSfor.NET library (for interacting with OPOS devices)  
 
 ---
-
-## 🔌 Getting Started
-
-1. Add `POSController.vb`, `POSProduct.vb`, and `PaymentGateway.vb` to your project.
-
-2. Initialize the POS controller:
-
-   ```vb
-   Dim pos As New POSController()
