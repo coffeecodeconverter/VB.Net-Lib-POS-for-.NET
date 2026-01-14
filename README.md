@@ -1,9 +1,9 @@
 # VB.NET-Lib - POS for .NET  
-Point of Sale (POS) Library for .NET with Easy Integration for Retail and Transaction Systems.
+Point of Sale (POS) Library for .NET with Easy Integration for Retail and Transaction Systems. <Br>
 Seamless interaction with OPOS devices using POS for .NET library. 
 can run silently in the background like a service. 
 
-BONUS FEATURE
+BONUS FEATURE <br>
 can run a local WebSocket server to expose OPOS devices to a web application! no longer are you locked in to out-dated UI libraries! 
 
 
