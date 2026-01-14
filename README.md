@@ -66,3 +66,29 @@ Additionally, it runs silently in the background as a service, listening for dev
 - POSfor.NET library (for interacting with OPOS devices)  
 
 ---
+
+<img width="834" height="606" alt="image" src="https://github.com/user-attachments/assets/f7387326-db11-4daa-860a-f9736a7bb9b0" />
+
+settings: <br>
+<img width="852" height="627" alt="image" src="https://github.com/user-attachments/assets/e9fc4fbe-3142-4b98-ac4f-0169b6860630" />
+
+
+Open, Claim, and Enable Cash Drawer - then Kick it: <br>
+<img width="1459" height="623" alt="image" src="https://github.com/user-attachments/assets/c719aca2-8a3a-4350-a7e1-1f2f724dad5a" />
+
+
+Open, Claim, and Enable MSR (Magnetic Swipe Reader): <br>
+<img width="1382" height="632" alt="image" src="https://github.com/user-attachments/assets/5969a8b7-7816-4cf0-a9b8-6c55ac0c122d" />
+
+Start WebSocket Server: <br>
+<img width="860" height="623" alt="image" src="https://github.com/user-attachments/assets/016c8a89-150a-47d2-9a83-e3b38eb56407" />
+
+Launch Test Web App: <br>
+<img width="1303" height="602" alt="image" src="https://github.com/user-attachments/assets/6e4d693f-14c9-44a9-826d-09a0894bd3f4" />
+
+Web App connected to EPOS Core: <br>
+<img width="1566" height="858" alt="image" src="https://github.com/user-attachments/assets/a4e8de52-afa9-4cba-ae3c-90795481481f" />
+
+
+
+
