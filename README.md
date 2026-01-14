@@ -34,20 +34,17 @@ Additionally, it runs silently in the background as a service, listening for dev
 
 ## 🧰 What’s Included
 
-### `POSController.vb` (Class)
-- Handles all core POS functions (sales, refunds, partial payments)  
+### `OPOSManager.vb` (Class)
 - Manages interactions with OPOS devices via POSfor.NET library  
-- Supports **real-time WebSocket communication** for device access  
-
-### `OPOSDeviceManager.vb` (Class)
 - Encapsulates the POSfor.NET library for interacting with OPOS peripherals (e.g., printers, scanners)  
 - Manages peripheral operations and device statuses
 
-### `WebSocketServer.vb` (Class)
+### `OPOSWebSocketServer.vb` (Class)
 - Exposes OPOS device operations via **WebSocket**, enabling real-time communication with web applications  
-- Supports bidirectional data flow for device statuses, actions, and updates  
+- Supports **real-time WebSocket communication** for device access  
+- Supports bidirectional data flow for device statuses, actions, and updates
 
-### `MiniWebApp.vb` (Web Interface)
+### `MiniWebApp.html` (sinlge-file HTML Web Application)
 - A **built-in web app** to test and interact with OPOS devices over WebSocket  
 - Includes simple device control UI for scanning, printing, etc.  
 
@@ -65,9 +62,7 @@ Additionally, it runs silently in the background as a service, listening for dev
 
 ## ⚙️ Requirements
 
-- **.NET Framework 4.5.1 or higher**  
-- **VB.Net-based application**  
-- Visual Studio 2015 or later recommended  
+- **.NET Framework 4.7.2 or higher**  
 - POSfor.NET library (for interacting with OPOS devices)  
 
 ---
